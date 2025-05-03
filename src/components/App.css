@@ -24,7 +24,7 @@ li{
   cursor: pointer;
 }
 .h1main{
-  font-size: 70px;
+  font-size: 40px;
   color: white;
   text-align: center;
   margin-top: 50px;
@@ -64,6 +64,30 @@ button{
   width: 100vmax;
   text-align: center;
   padding: 10px;
+}
+.list-container ul{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: auto;
+  margin-right:auto ;
+  align-items: center;
+  margin-top: 50px;
+  background-color: transparent;
+  gap: 15px;
+}
+.list-container ul li{
+  display: flex;
+  color: black;
+  background-color: white;
+  height: 80px;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.list{
+  width: 100%;
+  justify-content: space-between;
 }
 @keyframes loopAnimate{
   0%{
