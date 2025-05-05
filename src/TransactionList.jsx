@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import './App.css'
-import List from '../components/List'
+import List from './List';
 import { v4 as uuidv4 } from 'uuid';
 
 
-function App() {
+function TransactionList() {
   const data = [
     {title:'เงินเดือน',amount:40000},
     {title:'ค่าไฟ',amount:3000},
@@ -21,4 +21,4 @@ function App() {
   )
 }
 
-export default App
+export default TransactionList

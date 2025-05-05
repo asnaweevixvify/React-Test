@@ -11,7 +11,7 @@ function Form(){
                 <input type='text' placeholder='ระบุชื่อรายการ' onChange={inputTitle} value={title}></input>
                 <label><h2>จำนวนเงิน</h2></label>
                 <input type='number' placeholder='ระบุจำนวนเงิน' onChange={inputAmount} value={amount}></input>
-                <button type='submit'>Submit</button>
+                <button type='submit'>บันทึกรายการ</button>
             </form>
         </div>
     )

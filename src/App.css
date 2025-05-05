@@ -7,6 +7,8 @@ body{
   margin: 0;
   padding: 0;
   display: block;
+  background-color: #242424;
+
 }
 ul{
   display: flex;
@@ -46,6 +48,7 @@ h2{
   text-align: center;
   margin-top: 20px;
   font-size: 50px;
+  color: white;
 }
 h3{
   color: black;
@@ -56,6 +59,20 @@ button{
   margin-right: auto;
   font-size: 20px;
   margin-top: 20px;
+  font-family: 'Kanit';
+  font-weight: 400;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
 }
 .footer-container{
   position: fixed;
