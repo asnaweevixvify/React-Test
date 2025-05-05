@@ -1,16 +1,17 @@
 import { useState } from 'react'
 import './App.css'
+import { v4 as uuidv4 } from 'uuid';
 
-function Form(){
+function Form(props){
     const [title,setTitle] = useState('')
-    const [amount,setAmount] = useState(0)
+    const [amount,setAmount] = useState('')
     return(
         <div className='form-container'>
             <form onSubmit={saveItem}>
                 <label><h2>ชื่อรายการ</h2></label>
                 <input type='text' placeholder='ระบุชื่อรายการ' onChange={inputTitle} value={title}></input>
                 <label><h2>จำนวนเงิน</h2></label>
-                <input type='number' placeholder='ระบุจำนวนเงิน' onChange={inputAmount} value={amount}></input>
+                <input type='number' placeholder='ระบุจำนวนเงิน (รายรับ + , รายจ่าย -)' onChange={inputAmount} value={amount}></input>
                 <button type='submit'>บันทึกรายการ</button>
             </form>
         </div>
@@ -24,12 +25,13 @@ function Form(){
     function saveItem(e){
         e.preventDefault()
         const itemData = {
+            id:uuidv4(),
             title:title,
             amount:Number(amount)
         }
-        console.log(itemData);
+        props.onAddItem(itemData)
         setTitle('')
-        setAmount(0)
+        setAmount('')
     }
 }
 

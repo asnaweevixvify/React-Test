@@ -1,20 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 import List from './List';
-import { v4 as uuidv4 } from 'uuid';
 
-
-function TransactionList() {
-  const data = [
-    {title:'เงินเดือน',amount:40000},
-    {title:'ค่าไฟ',amount:3000},
-    {title:'เงินรับ',amount:750}
-  ]
+function TransactionList(props) {
+  const items = props.items
   return (
     <div className='list-container'>
       <ul>
-          {data.map((item)=>{
-              return <List title={item.title} amount={item.amount} key={uuidv4()}/>
+          {items.map((item)=>{
+              return <List title={item.title} amount={item.amount} key={item.id}/>
           })}
       </ul>
     </div>
