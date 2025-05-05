@@ -1,7 +1,7 @@
-import Navbar from './Navbar'
-import Form from './Form'
-import TransactionList from './TransactionList' 
-import './App.css'
+import Navbar from './components/Navbar'
+import Form from './components/form'
+import TransactionList from './components/TransactionList'
+import '../src/components/App.css'
 
 
 function App() {
