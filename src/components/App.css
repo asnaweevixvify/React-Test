@@ -54,8 +54,8 @@ button{
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 70px;
-  font-size: 30px;
+  font-size: 20px;
+  margin-top: 20px;
 }
 .footer-container{
   position: fixed;
@@ -72,7 +72,7 @@ button{
   margin-left: auto;
   margin-right:auto ;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 20px;
   background-color: transparent;
   gap: 15px;
 }
@@ -88,6 +88,32 @@ button{
 .list{
   width: 100%;
   justify-content: space-between;
+}
+.form-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  gap: 20px;
+}
+.form-container h2{
+  font-size: 25px;
+  text-align: left;
+}
+form{
+  margin-left: auto;
+  margin-right: auto;
+}
+input{
+  width: 400px;
+  height: 40px;
+  font-family: 'Kanit';
+  font-weight: 400;
+  padding-left: 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 15px;
 }
 @keyframes loopAnimate{
   0%{

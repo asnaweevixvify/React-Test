@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './App.css'
+import PropTypes from 'prop-types';
+
 
 
 function List(props){
@@ -12,6 +14,11 @@ function List(props){
         </li>
         </>
     ) 
+}
+
+List.propTypes={
+    title:PropTypes.string.isRequired,
+    amount:PropTypes.number.isRequired
 }
 
 export default List
