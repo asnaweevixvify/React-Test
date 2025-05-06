@@ -105,6 +105,11 @@ button{
 .list{
   width: 80%;
   justify-content: space-between;
+  transition: transform 0.2s ease-in-out;
+  font-size: 20px;
+}
+.list:hover{
+  transform: scale(1.02);
 }
 .form-container{
   display: flex;
