@@ -24,6 +24,18 @@ li{
   color: white;
   font-size: 25px;
   cursor: pointer;
+  text-decoration: none;
+}
+li a{
+  color: white;
+  text-decoration: none;
+}
+.li{
+  font-family: 'Kanit';
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  text-decoration: none;
 }
 .h1main{
   font-size: 40px;
@@ -40,7 +52,7 @@ img{
   margin-top: 105px;
   animation: loopAnimate 8s linear infinite;
 }
-h1,h2,h3{
+h1,h2,h3,h4{
   font-family: 'Kanit';
   font-weight: 400;
 }
@@ -52,6 +64,9 @@ h2{
 }
 h3{
   color: black;
+}
+h4{
+  color: white;
 }
 button{
   display: flex;
@@ -150,4 +165,64 @@ p{
   text-align: center;
   margin-top: 20px;
   font-size: 25px;
+}
+.total{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  align-items:baseline;
+}
+.total h1{
+  font-size: 50px;
+  color: white;
+}
+.earnpaycontain{
+  max-width: 100vw;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  width: 400px;
+  gap: 30px;
+  background-color: white;
+  padding: 20px 10px 20px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-top: 20px;
+  align-items:center;
+
+}
+.total h4{
+  color: white;
+  font-size: 20px;
+}
+.earnpaycontain h2,h4{
+  font-size: 35px;
+  margin-top: -5px;
+  color: #242424;
+}
+.earnpaycontain h4{
+  font-size: 20px;
+}
+.line{
+  width: 3px;
+  height: 80px;
+  background-color: gray;
+  opacity: 0.2;
+  margin-top: -21px;
+  margin-bottom: -21px;
+}
+.count{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+.name{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-top: 60px;
 }
